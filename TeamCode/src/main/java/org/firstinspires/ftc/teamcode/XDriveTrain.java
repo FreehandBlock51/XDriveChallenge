@@ -25,8 +25,8 @@ public class XDriveTrain extends DriveTrain {
     }
 
     public void setMovementVectorAndRotate(double movePower, double moveDirectionRadians, double rotationPower) {
-        setDirectionalPower(frontLeftMotor, FRONT_LEFT_MOTOR_ROTATION, movePower, moveDirectionRadians, rotationPower);
-        setDirectionalPower(frontRightMotor, FRONT_RIGHT_MOTOR_ROTATION, movePower, moveDirectionRadians, rotationPower);
+        setDirectionalPower(frontLeftMotor, FRONT_LEFT_MOTOR_ROTATION, movePower, moveDirectionRadians, -rotationPower);
+        setDirectionalPower(frontRightMotor, FRONT_RIGHT_MOTOR_ROTATION, movePower, moveDirectionRadians, -rotationPower);
         setDirectionalPower(backLeftMotor, BACK_LEFT_MOTOR_ROTATION, movePower, moveDirectionRadians, rotationPower);
         setDirectionalPower(backRightMotor, BACK_RIGHT_MOTOR_ROTATION, movePower, moveDirectionRadians, rotationPower);
     }
