@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class XDriveTrain extends DriveTrain {
     private static final double FRONT_LEFT_MOTOR_ROTATION = Math.PI * 3 / 4,
-                                FRONT_RIGHT_MOTOR_ROTATION = Math.PI / 4,
+                                FRONT_RIGHT_MOTOR_ROTATION = Math.PI * 1 / 4,
                                 BACK_LEFT_MOTOR_ROTATION = Math.PI * 5 / 4,
                                 BACK_RIGHT_MOTOR_ROTATION = Math.PI * 7 / 4;
 
